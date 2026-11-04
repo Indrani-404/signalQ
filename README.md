@@ -13,12 +13,4 @@ npm run build    # production build into dist/
 
 Needs Node 22+.
 
-## Deploy to Vercel
 
-1. Push this folder to a GitHub repo.
-2. In Vercel: **Add New → Project**, import the repo.
-3. Leave the defaults (Framework: Vite, Build: `npm run build`, Output: `dist`) and click **Deploy**.
-
-`vercel.json` already contains these settings. No environment variables are required.
-
-Or with the CLI: `npx vercel --prod`.
