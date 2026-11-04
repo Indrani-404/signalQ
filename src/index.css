@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Smooth Leaflet map & hardware-accelerated rendering */
+.leaflet-container {
+  font-family: inherit;
+  background-color: #020617 !important;
+  outline: none;
+}
+
+.custom-node-icon,
+.custom-hospital-icon,
+.incident-icon {
+  background: transparent !important;
+  border: none !important;
+  /* No transition on transform: Leaflet handles marker transforms synchronously */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+/* Crisp vehicle canvas overlay with subpixel smoothing */
+canvas {
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Smooth custom dark scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.7);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.9);
+}

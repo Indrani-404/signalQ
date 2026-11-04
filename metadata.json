@@ -1,0 +1,8 @@
+{
+  "name": "SignalQ",
+  "description": "An open-source, community-driven mapping platform featuring detailed navigation and landmarks across the city of Kolkata.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
